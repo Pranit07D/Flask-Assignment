@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploaded Files</title>
+</head>
+<body>
+    <h1>Uploaded Files</h1>
+    <a href="{{ url_for('upload_file') }}">Upload a new file</a>
+    <ul>
+    {% for file in files %}
+        <li><img src="{{ url_for('static', filename='uploads/' + file) }}" alt="{{ file }}" width="200"></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

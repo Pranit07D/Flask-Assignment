@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='chat.js') }}"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #chat-box { height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
+        input { width: 70%; padding: 10px; margin-right: 10px; }
+        button { padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Chat Room</h1>
+    <div id="chat-box"></div>
+    <input id="message" type="text" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+</body>
+</html>

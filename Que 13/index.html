@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Notifications</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #notifications { margin: 20px; padding: 10px; border: 1px solid #ccc; }
+        .notification { padding: 10px; border-bottom: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Notifications</h1>
+    <div id="notifications">
+        <div id="notification-container"></div>
+    </div>
+</body>
+</html>

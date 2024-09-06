@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Data Updates</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1 { text-align: center; }
+        #data { font-size: 2rem; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Data Updates</h1>
+    <div id="data">Waiting for updates...</div>
+</body>
+</html>
